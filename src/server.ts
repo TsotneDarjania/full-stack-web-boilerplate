@@ -4,9 +4,9 @@ import pageRouter from "./router/pageRouter";
 
 const app = express();
 app.set("view engine", "ejs");
-app.set("views", "src/views");
+app.set("views", "public");
 
-app.use(express.static("src/static"));
+app.use(express.static("public"));
 
 app.use(pageRouter);
 
